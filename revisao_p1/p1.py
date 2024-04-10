@@ -27,7 +27,7 @@ print(f"Northern America Countries: {northern_america_countries}\n")
 
 # 5) Greatest GDP Latan & Carib
 filter_latin_carib = arr[np.char.find(arr[:, 1], 'LATIN AMER. & CARIB')>=0]
-filter_greatest_gdp = np.float64(filter_latin_carib[:, 8]).max()
+
 filter_gdp_index = np.argmax(np.float64(filter_latin_carib[:, 8]))
 
 print(f"Greatest Latin America & Carib GDP: {filter_latin_carib[filter_gdp_index, 0]}")

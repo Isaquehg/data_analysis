@@ -15,7 +15,7 @@ arr2 = np.random.randint(0, 51, (4, 4))
 print(f"Array from 0 to 50, 4x4:\n{arr2}")
 
 # 3)
-total_mean = np.mean(arr2)
+total_mean = (np.mean(arr2)).astype(int)
 mean_x = np.mean(arr2, 0)
 mean_y = np.mean(arr2, 1)
 print(f"Total Mean: {total_mean}\nX axis: {mean_x}\nY axis: {mean_y}")
@@ -28,3 +28,4 @@ arr4 = np.stack((unique, counts), axis=0)
 print(f"Unique numbers and its repetitions:\n{arr4}")
 
 print(f"Repeated numbers: {arr4[0, arr4[1]>1]}")
+np.random.rand()
